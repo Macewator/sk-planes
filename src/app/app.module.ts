@@ -10,6 +10,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 import { CoreModule } from './core/core.module';
 import { MaterialModule } from './material/material.module';
+import { FlightsModule } from './flights/flights.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MaterialModule } from './material/material.module';
     CoreModule,
     MaterialModule,
     AngularFireAuthModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlightsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

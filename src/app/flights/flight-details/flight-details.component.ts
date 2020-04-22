@@ -30,7 +30,7 @@ export class FlightDetailsComponent implements OnInit {
 
   editFlight(): void {
     this.close();
-    this.router.navigate(['/dashboard/flights/edit', this.flight.key]);
+    this.router.navigate(['/dashboard/flights', this.flight.key]);
   }
   
 }

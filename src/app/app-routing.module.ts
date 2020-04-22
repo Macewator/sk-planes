@@ -5,6 +5,7 @@ import { DashboardComponent } from './core/dashboard/dashboard.component';
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
 import { AuthGuard } from './core/guards/auth.guard';
 import { FlightEditComponent } from './flights/flight-edit/flight-edit.component';
+import { FlightsComponent } from './flights/flights.component';
 
 const ROUTES: Routes = [
   {
@@ -25,6 +26,10 @@ const ROUTES: Routes = [
         path: '',
         redirectTo: 'flights',
         pathMatch: 'full'
+      },
+      {
+        path: 'flights',
+        component: FlightsComponent
       },
       {
         path: 'flights/:key',
