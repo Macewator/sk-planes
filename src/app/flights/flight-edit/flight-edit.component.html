@@ -1,0 +1,21 @@
+<div class="col-sm-8 mx-auto">
+    <div class="row">
+        <div class="col">
+            <h3>
+                Edit flight <strong>{{ flight?.code }}</strong> details
+            </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <app-flight-form #flightForm></app-flight-form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-left">
+            <button mat-raised-button color="primary" (click)="updateFlighte()">SAVE</button>
+            <button mat-raised-button color="accent" (click)="removeFlight()"><b>DELETE</b></button>
+            <button mat-raised-button (click)="resetForm()">RESET</button>
+        </div>
+    </div>
+</div>

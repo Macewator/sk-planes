@@ -1,0 +1,13 @@
+<div class="row flight-container">
+    <div class="col-sm-4" *ngFor="let flight of flights | async" (click)="openFlightDetails(flight)">
+        <app-flight-card [flight]="flight"></app-flight-card>
+    </div>
+</div>
+<button (click)="openNewFlightModal()" mat-fab id="new-flight-btn">
+    <div class="row" id="mod-sym">
+        +
+    </div>
+    <div class="row" id="mod-txt">
+        flight
+    </div>
+</button>
